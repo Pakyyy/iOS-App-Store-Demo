@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="18154" systemVersion="20D91" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="AppIcon" representedClassName="AppIcon" syncable="YES">
+        <attribute name="imgData" optional="YES" attributeType="Binary"/>
+        <attribute name="imgUrl" optional="YES" attributeType="String"/>
+        <attribute name="lastUpdate" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <uniquenessConstraints>
+            <uniquenessConstraint>
+                <constraint value="imgUrl"/>
+            </uniquenessConstraint>
+        </uniquenessConstraints>
+    </entity>
+    <entity name="FreeApplication" representedClassName="FreeApplication" syncable="YES">
+        <attribute name="appId" optional="YES" attributeType="String"/>
+        <attribute name="author" optional="YES" attributeType="String"/>
+        <attribute name="category" optional="YES" attributeType="String"/>
+        <attribute name="imgUrl" optional="YES" attributeType="String"/>
+        <attribute name="lastUpdate" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="ranking" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="rating" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="ratingCount" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="summary" optional="YES" attributeType="String"/>
+        <attribute name="title" optional="YES" attributeType="String"/>
+        <uniquenessConstraints>
+            <uniquenessConstraint>
+                <constraint value="ranking"/>
+            </uniquenessConstraint>
+        </uniquenessConstraints>
+    </entity>
+    <entity name="GrossingApplication" representedClassName="GrossingApplication" syncable="YES">
+        <attribute name="appId" optional="YES" attributeType="String"/>
+        <attribute name="author" optional="YES" attributeType="String"/>
+        <attribute name="category" optional="YES" attributeType="String"/>
+        <attribute name="imgUrl" optional="YES" attributeType="String"/>
+        <attribute name="lastUpdate" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="ranking" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="summary" optional="YES" attributeType="String"/>
+        <attribute name="title" optional="YES" attributeType="String"/>
+        <uniquenessConstraints>
+            <uniquenessConstraint>
+                <constraint value="ranking"/>
+            </uniquenessConstraint>
+        </uniquenessConstraints>
+    </entity>
+    <elements>
+        <element name="AppIcon" positionX="-63" positionY="45" width="128" height="74"/>
+        <element name="FreeApplication" positionX="-63" positionY="-18" width="128" height="179"/>
+        <element name="GrossingApplication" positionX="-63" positionY="54" width="128" height="149"/>
+    </elements>
+</model>
